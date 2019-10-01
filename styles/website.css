@@ -1,0 +1,6 @@
+body *{
+	font-family: 微软雅黑 !important;
+}
+body .fa{
+	font: normal normal normal 14px/1 FontAwesome !important;
+}

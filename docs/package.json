@@ -1,0 +1,17 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "description": "&emsp;&emsp;评价大师是一个以机器学习概念设计的法人级智能投顾系统，结合量化平台并透过运算评价函数( 动能评估函数)来对策略进行绩效健检，可以即时监控所有策略与商品的评价结果，并依据动能大小进行策略自动上下架与部位管理。当商品与策略库越多，可供配置的项目越广泛，将更有机会往有效率且品质优良的目标分配资金，同时评价大师亦完整串接实时行情下单，简化投资大众非必要的整合困难，让量化交易之路更通顺。",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "echo-export": "echo \"Export gitbook to docs\"",
+    "create": "gitbook init && git init",
+    "build": "gitbook build . ./docs && npm run echo-export -s && git add . && git commit -m \"update\" && echo \"Commit success.\" && git push -u github master && echo \"Push success.\""
+  },
+  "author": "",
+  "license": "ISC"
+}

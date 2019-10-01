@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "timeout": 60000,
+            "type": "node",
+            "request": "launch",
+            "name": "create gitbook",
+            "runtimeExecutable": "npm",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": [
+                "run-script", "create"
+            ]
+        },
+        {
+            "timeout": 60000,
+            "type": "node",
+            "request": "launch",
+            "name": "build gitbook",
+            "runtimeExecutable": "npm",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": [
+                "run-script", "build"
+            ]
+        }
+    ]
+}
